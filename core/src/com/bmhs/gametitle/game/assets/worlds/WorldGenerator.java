@@ -77,7 +77,7 @@ public class WorldGenerator {
     protected int currentelevation = elevtationnum;
     public void islandBuild() {
 
-        while(currentelevation > 3) {
+        while(currentelevation > 4) {
             for (int r = 1; r < worldIntMap.length - 2; r++) {
                 for (int c = 1; c < worldIntMap[r].length - 2; c++) {
                     if (worldIntMap[r][c + 1] == currentelevation) {
