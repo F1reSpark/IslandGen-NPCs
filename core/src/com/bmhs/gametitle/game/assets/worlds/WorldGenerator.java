@@ -30,7 +30,7 @@ public class WorldGenerator {
         worldIntMap = new int[worldMapRows][worldMapColumns];
         createBackground();
 
-        for (int seednum = 0; seednum < 7; seednum++) {
+        for (int seednum = 0; seednum < 21; seednum++) {
             Vector2 mapseed = new Vector2(MathUtils.random(worldIntMap[0].length), MathUtils.random(worldIntMap.length));
             System.out.println(mapseed.y + " " + mapseed.x);
 
@@ -74,74 +74,74 @@ public class WorldGenerator {
             }
         }
     }
-    protected int currentelevation = elevtationnum;
+    protected int currentElevation = elevtationnum;
     public void islandBuild() {
 
-        while(currentelevation > 4) {
+        while(currentElevation > 4) {
             for (int r = 1; r < worldIntMap.length - 2; r++) {
                 for (int c = 1; c < worldIntMap[r].length - 2; c++) {
-                    if (worldIntMap[r][c + 1] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    if (worldIntMap[r][c + 1] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r + 1][c] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r + 1][c] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r - 1][c - 1] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r - 1][c - 1] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r][c - 1] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r][c - 1] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r + 1][c + 1] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r + 1][c + 1] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r - 1][c + 1] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r - 1][c + 1] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r - 1][c] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r - 1][c] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
-                    } else if (worldIntMap[r + 1][c - 1] == currentelevation) {
-                        if(worldIntMap[r][c] < currentelevation) {
+                    } else if (worldIntMap[r + 1][c - 1] == currentElevation) {
+                        if(worldIntMap[r][c] < currentElevation) {
                             if (MathUtils.random(0, 4) == 4) {
-                                worldIntMap[r][c] = currentelevation;
+                                worldIntMap[r][c] = currentElevation;
                             } else {
-                                worldIntMap[r][c] = currentelevation - 1;
+                                worldIntMap[r][c] = currentElevation - 1;
                             }
                         }
                     }
@@ -149,7 +149,7 @@ public class WorldGenerator {
                 }
                 //worldIntMap[r][c] = MathUtils.random(TileHandler.getTileHandler().getWorldTileArray().size-1);
             }
-            currentelevation--;
+            currentElevation--;
         }
 
              //islandBuild();
