@@ -5,6 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
+import com.bmhs.gametitle.game.assets.characters.PlayerCharacter;
 import com.bmhs.gametitle.gfx.assets.tiles.statictiles.WorldTile;
 import com.bmhs.gametitle.gfx.utils.TileHandler;
 
@@ -19,6 +20,8 @@ public class WorldGenerator {
     private int ycoord;
     Vector2 mapseed;
     private int elevtationnum = 14;
+
+
 
 
 
