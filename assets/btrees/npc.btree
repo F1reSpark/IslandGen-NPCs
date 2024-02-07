@@ -1,5 +1,5 @@
 #
-# Fish tree
+# NPC tree
 #
 
 # Alias definitions
@@ -7,6 +7,5 @@ import talk:"com.bmhs.gametitle.game.assets.tasks.TalkTask"
 
 # Tree definition
 root
-    selector
-        sequence
-            talk
+    sequence
+        talk

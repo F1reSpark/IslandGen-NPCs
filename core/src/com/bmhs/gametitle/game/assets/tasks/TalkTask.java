@@ -12,7 +12,7 @@ public class TalkTask extends LeafTask<NonPlayerCharacter> {
     @Override
     public Status execute() {
         System.out.println("executing talk task...");
-        return null;
+        return Status.SUCCEEDED;
     }
 
     @Override

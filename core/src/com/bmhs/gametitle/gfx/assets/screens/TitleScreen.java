@@ -80,6 +80,22 @@ public class TitleScreen implements Screen {
             }
         });
         titleScreenStage.addActor(worldGenTest);
+
+        TextButton NPCTestScreen = new TextButton("Show NPCTest", game.skin, "default");
+        NPCTestScreen.setWidth(150);
+        NPCTestScreen.setHeight(25);
+        NPCTestScreen.setPosition(20, 90);
+        NPCTestScreen.addListener(new InputListener(){
+            @Override
+            public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
+                game.setScreen(new NPCTestScreen(game, parent));
+            }
+            @Override
+            public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+                return true;
+            }
+        });
+        titleScreenStage.addActor(NPCTestScreen);
     }
 
     @Override
