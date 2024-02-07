@@ -14,6 +14,7 @@ public class WalkTask extends LeafTask<NonPlayerCharacter> {
     }
     @Override
     public Status execute() {
+        npc.walk();
         return Status.SUCCEEDED;
     }
 

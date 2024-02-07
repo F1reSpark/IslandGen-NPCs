@@ -26,7 +26,7 @@ public class NPCTestScreen implements Screen {
 
 
         for (int i = 0; i < npcCount; i++){
-            WorldTile tempTile = TileHandler.getTileHandler().getWorldTileArray().get(2);
+            WorldTile tempTile = TileHandler.getTileHandler().getWorldTileArray().get(3);
             float tempX = (float) (Math.random()* Gdx.graphics.getWidth());
             float tempY = (float) (Math.random()* Gdx.graphics.getHeight());
             String tempName = "NPC " + i;
