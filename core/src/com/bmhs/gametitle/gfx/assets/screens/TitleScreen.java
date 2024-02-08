@@ -96,6 +96,24 @@ public class TitleScreen implements Screen {
             }
         });
         titleScreenStage.addActor(NPCTestScreen);
+
+        /*
+        TextButton setFullScreen = new TextButton("Set Fullscreen", game.skin, "default");
+        showWorldTiles.setWidth(150);
+        showWorldTiles.setHeight(25);
+        showWorldTiles.setPosition(20, 20);
+        showWorldTiles.addListener(new InputListener(){
+            @Override
+            public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
+                config.set
+            }
+            @Override
+            public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+                return true;
+            }
+        });
+        titleScreenStage.addActor(setFullScreen);
+        */
     }
 
     @Override
